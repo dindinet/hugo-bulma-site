@@ -14,3 +14,4 @@ title = 'My New Hugo-Bulma Site'
   [[module.mounts]]
     source = 'index.html'
     target = 'static/index.html'
+    
