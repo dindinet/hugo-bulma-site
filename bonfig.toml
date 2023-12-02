@@ -1,0 +1,13 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'My New Hugo-Bulma Site'
+
+[module]
+[[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = false
+    path = 'github.com/dindinet/primo-startup-vercel'
+[[module.imports.mounts]]
+    source = '.'
+    target = 'static'
