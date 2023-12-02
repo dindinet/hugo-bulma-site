@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <meta charset="utf-8">  
+
+    {{ partial "head.html" .}}
+
+</head>
+<body class="has-navbar-fixed-top">
+<!-- Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+
+{{ partial "header.html" .}}
+
+    
+    {{ block "main" . }}
+    
+      {{ .Content }}
+      
+    {{ end }}
+
+{{ partial "footer.html" .}}
+
+
+</body>
+</html>

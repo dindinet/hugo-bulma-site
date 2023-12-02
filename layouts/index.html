@@ -1,0 +1,237 @@
+<!-- layouts/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+<!-- Hero Section -->
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{.Params.usp }}
+      </h1>
+      <h2 class="subtitle">
+        {{ .Params.benefits }}
+      </h2>
+      <a href="/learn-more" class="button is-cta-btn">
+        Learn More About Empowering Your Team
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Section 1 (50/50) -->
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Feature 1 Image">
+      </div>
+      <div class="column">
+        <h2 class="title">Feature 1 Heading</h2>
+        <p>
+          Feature 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Section 2 (50/50) -->
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h2 class="title">Feature 2 Heading</h2>
+        <p>
+          Feature 2 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="column is-half">
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Feature 2 Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Card Section -->
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <!-- Card 1 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://images.unsplash.com/photo-1674049405530-7bbb0b0c1eef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=420&q=80" alt="Card 1 Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://images.unsplash.com/photo-1674049406250-1086f118c4b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=420&q=80" alt="Card 1 Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 2 Heading</h3>
+            <p>
+              Card 2 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-2" class="button is-link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://images.unsplash.com/photo-1674049406435-8e52f0375a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9va2luZyUyMGNvbmZ1c2VkfGVufDB8fDB8fHww&auto=format&fit=crop&w=420&h=280&q=80" alt="Card 1 Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 3 Heading</h3>
+            <p>
+              Card 3 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-3" class="button is-link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Blog Card Section -->
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="card">
+    <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/420/280" alt="Card image">
+            </figure>
+          </div>
+          
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/420/280" alt="Card image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/420/280" alt="Card image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/420/280" alt="Card image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/420/280" alt="Card image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://picsum.photos/420/280" alt="Card image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title">Card 1 Heading</h3>
+            <p>
+              Card 1 Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="/card-1" class="button is-link">Read More</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>
