@@ -7,7 +7,7 @@ title = 'My New Hugo-Bulma Site'
     disable = false
     ignoreConfig = false
     ignoreImports = false
-    path = 'github.com/dindinet/primo-startup-vercel'
+    path = 'github.com/dindinet/primoStartupVercel'
 [[module.imports.mounts]]
     source = '.'
     target = 'static'
